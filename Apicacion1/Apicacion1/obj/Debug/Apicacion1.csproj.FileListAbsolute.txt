@@ -1,0 +1,10 @@
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\bin\Debug\Apicacion1.exe.config
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\bin\Debug\Apicacion1.exe
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\bin\Debug\Apicacion1.pdb
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csprojAssemblyReference.cache
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.Form1.resources
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.Properties.Resources.resources
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.GenerateResource.cache
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.CoreCompileInputs.cache
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.exe
+K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.pdb
