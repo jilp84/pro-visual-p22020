@@ -8,3 +8,14 @@ K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.Gener
 K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.CoreCompileInputs.cache
 K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.exe
 K:\01-primera-aplicacion\Apicacion1\Apicacion1\obj\Debug\Apicacion1.pdb
+K:\pro-visual-p22020\Apicacion1\Apicacion1\bin\Debug\Apicacion1.exe.config
+K:\pro-visual-p22020\Apicacion1\Apicacion1\bin\Debug\Apicacion1.exe
+K:\pro-visual-p22020\Apicacion1\Apicacion1\bin\Debug\Apicacion1.pdb
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csprojAssemblyReference.cache
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.Form1.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.Properties.Resources.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.GenerateResource.cache
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.CoreCompileInputs.cache
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.exe
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.pdb
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmOperacionesBasicas.resources
