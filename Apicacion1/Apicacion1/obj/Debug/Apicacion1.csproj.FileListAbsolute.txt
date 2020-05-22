@@ -19,3 +19,5 @@ K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.csproj.CoreCompi
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.exe
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.pdb
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmOperacionesBasicas.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmColores.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmPrincipal.resources
