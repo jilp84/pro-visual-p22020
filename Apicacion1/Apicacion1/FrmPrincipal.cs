@@ -22,5 +22,28 @@ namespace Apicacion1
             FrmColores colores = new FrmColores();
             colores.Show();
         }
+
+        private void mnuColores_Click(object sender, EventArgs e)
+        {
+            FrmColores colores = new FrmColores();
+            colores.MdiParent = this;
+            colores.Visible = true;
+        }
+
+        private void mnuOperacionesBasicas_Click(object sender, EventArgs e)
+        {
+            FrmOperacionesBasicas ob = new FrmOperacionesBasicas();
+            ob.MdiParent = this;
+            ob.Visible = true;
+
+        }
+
+        private void mnuClientes_Click(object sender, EventArgs e)
+        {
+            FrmClientes cl = new FrmClientes();
+            cl.MdiParent = this;
+            cl.Visible = true;
+
+        }
     }
 }
