@@ -35,6 +35,7 @@
             this.mnuColores = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuOperacionesBasicas = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             // mnuSalir
             // 
             this.mnuSalir.Name = "mnuSalir";
-            this.mnuSalir.Size = new System.Drawing.Size(180, 22);
+            this.mnuSalir.Size = new System.Drawing.Size(96, 22);
             this.mnuSalir.Text = "Salir";
             // 
             // mnuOpciones
@@ -68,7 +69,8 @@
             this.mnuOpciones.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuColores,
             this.mnuOperacionesBasicas,
-            this.mnuClientes});
+            this.mnuClientes,
+            this.tablasToolStripMenuItem});
             this.mnuOpciones.Name = "mnuOpciones";
             this.mnuOpciones.Size = new System.Drawing.Size(69, 20);
             this.mnuOpciones.Text = "Opciones";
@@ -93,6 +95,13 @@
             this.mnuClientes.Size = new System.Drawing.Size(181, 22);
             this.mnuClientes.Text = "Clientes";
             this.mnuClientes.Click += new System.EventHandler(this.mnuClientes_Click);
+            // 
+            // tablasToolStripMenuItem
+            // 
+            this.tablasToolStripMenuItem.Name = "tablasToolStripMenuItem";
+            this.tablasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.tablasToolStripMenuItem.Text = "Tablas";
+            this.tablasToolStripMenuItem.Click += new System.EventHandler(this.tablasToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -120,5 +129,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuColores;
         private System.Windows.Forms.ToolStripMenuItem mnuOperacionesBasicas;
         private System.Windows.Forms.ToolStripMenuItem mnuClientes;
+        private System.Windows.Forms.ToolStripMenuItem tablasToolStripMenuItem;
     }
 }

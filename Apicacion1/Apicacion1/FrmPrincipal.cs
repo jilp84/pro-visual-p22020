@@ -45,5 +45,13 @@ namespace Apicacion1
             cl.Visible = true;
 
         }
+
+        private void tablasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTablas frmTablas = new FrmTablas();
+            frmTablas.MdiParent = this;
+            frmTablas.Visible = true;
+
+        }
     }
 }
