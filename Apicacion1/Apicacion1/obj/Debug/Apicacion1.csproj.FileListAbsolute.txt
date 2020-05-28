@@ -23,3 +23,4 @@ K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmColores.resou
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmPrincipal.resources
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmClientes.resources
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmTablas.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmNotas.resources

@@ -53,5 +53,12 @@ namespace Apicacion1
             frmTablas.Visible = true;
 
         }
+
+        private void mnuPromedio_Click(object sender, EventArgs e)
+        {
+            FrmNotas frmNotas = new FrmNotas();
+            frmNotas.MdiParent = this;
+            frmNotas.Visible = true;
+        }
     }
 }
