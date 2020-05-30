@@ -37,6 +37,7 @@
             this.mnuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.tablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPromedio = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuArrays = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,8 @@
             this.mnuOperacionesBasicas,
             this.mnuClientes,
             this.tablasToolStripMenuItem,
-            this.mnuPromedio});
+            this.mnuPromedio,
+            this.mnuArrays});
             this.mnuOpciones.Name = "mnuOpciones";
             this.mnuOpciones.Size = new System.Drawing.Size(69, 20);
             this.mnuOpciones.Text = "Opciones";
@@ -112,6 +114,13 @@
             this.mnuPromedio.Text = "Promedio";
             this.mnuPromedio.Click += new System.EventHandler(this.mnuPromedio_Click);
             // 
+            // mnuArrays
+            // 
+            this.mnuArrays.Name = "mnuArrays";
+            this.mnuArrays.Size = new System.Drawing.Size(181, 22);
+            this.mnuArrays.Text = "Arrays";
+            this.mnuArrays.Click += new System.EventHandler(this.mnuArrays_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,5 +149,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuClientes;
         private System.Windows.Forms.ToolStripMenuItem tablasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuPromedio;
+        private System.Windows.Forms.ToolStripMenuItem mnuArrays;
     }
 }

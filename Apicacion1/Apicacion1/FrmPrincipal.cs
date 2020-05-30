@@ -60,5 +60,12 @@ namespace Apicacion1
             frmNotas.MdiParent = this;
             frmNotas.Visible = true;
         }
+
+        private void mnuArrays_Click(object sender, EventArgs e)
+        {
+            FrmArrays frmArrays = new FrmArrays();
+            frmArrays.MdiParent = this;
+            frmArrays.Visible = true;
+        }
     }
 }
