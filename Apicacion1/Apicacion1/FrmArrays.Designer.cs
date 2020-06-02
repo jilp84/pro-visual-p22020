@@ -35,6 +35,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtAgregarValor = new System.Windows.Forms.TextBox();
             this.txtSalida = new System.Windows.Forms.RichTextBox();
+            this.btnMostrarArray = new System.Windows.Forms.Button();
+            this.btnMostrarArrayWhile = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTamanioArray
@@ -92,17 +95,50 @@
             // txtSalida
             // 
             this.txtSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalida.Location = new System.Drawing.Point(21, 46);
+            this.txtSalida.Location = new System.Drawing.Point(21, 72);
             this.txtSalida.Name = "txtSalida";
-            this.txtSalida.Size = new System.Drawing.Size(517, 392);
+            this.txtSalida.Size = new System.Drawing.Size(517, 366);
             this.txtSalida.TabIndex = 6;
             this.txtSalida.Text = "";
+            // 
+            // btnMostrarArray
+            // 
+            this.btnMostrarArray.Location = new System.Drawing.Point(443, 46);
+            this.btnMostrarArray.Name = "btnMostrarArray";
+            this.btnMostrarArray.Size = new System.Drawing.Size(95, 23);
+            this.btnMostrarArray.TabIndex = 7;
+            this.btnMostrarArray.Text = "Mostrar Array";
+            this.btnMostrarArray.UseVisualStyleBackColor = true;
+            this.btnMostrarArray.Click += new System.EventHandler(this.btnMostrarArray_Click);
+            // 
+            // btnMostrarArrayWhile
+            // 
+            this.btnMostrarArrayWhile.Location = new System.Drawing.Point(309, 46);
+            this.btnMostrarArrayWhile.Name = "btnMostrarArrayWhile";
+            this.btnMostrarArrayWhile.Size = new System.Drawing.Size(127, 23);
+            this.btnMostrarArrayWhile.TabIndex = 8;
+            this.btnMostrarArrayWhile.Text = "Mostrar Array While";
+            this.btnMostrarArrayWhile.UseVisualStyleBackColor = true;
+            this.btnMostrarArrayWhile.Click += new System.EventHandler(this.btnMostrarArrayWhile_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(176, 46);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(127, 23);
+            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // FrmArrays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 450);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnMostrarArrayWhile);
+            this.Controls.Add(this.btnMostrarArray);
             this.Controls.Add(this.txtSalida);
             this.Controls.Add(this.btnAgregarValor);
             this.Controls.Add(this.label2);
@@ -127,5 +163,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAgregarValor;
         private System.Windows.Forms.RichTextBox txtSalida;
+        private System.Windows.Forms.Button btnMostrarArray;
+        private System.Windows.Forms.Button btnMostrarArrayWhile;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

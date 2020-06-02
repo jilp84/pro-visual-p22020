@@ -35,7 +35,7 @@ namespace Apicacion1
 
         private void btnAgregarValor_Click(object sender, EventArgs e)
         {
-            if (flag < int.Parse(txtTamanioArray.Text))
+            if (flag < array.Length)
             {
                 array[flag] = int.Parse(txtAgregarValor.Text);
                 txtSalida.Text += "Array[" + flag + "]" + " = " + array[flag].ToString() + "\n";
@@ -47,6 +47,43 @@ namespace Apicacion1
             }
 
 
+        }
+
+        private void btnMostrarArray_Click(object sender, EventArgs e)
+        {
+            txtSalida.Text = "Los valores del array son los siguientes:\n";
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                txtSalida.Text += "Array[" + i + "]" + " = " + array[i].ToString() + "\n";
+            }
+
+        }
+
+        private void btnMostrarArrayWhile_Click(object sender, EventArgs e)
+        {
+            txtSalida.Text = "Los valores del array son los siguientes:\n";
+
+            int i = 0;
+
+            while(i < array.Length)
+            {
+                txtSalida.Text += "Array[" + i + "]" + " = " + array[i].ToString() + "\n";
+
+                i++;
+            }
+        }
+
+        private void Limpiar() {
+            txtSalida.Text = "";
+            txtAgregarValor.Text = "";
+            txtTamanioArray.Text = "";
+            flag = 0;
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
