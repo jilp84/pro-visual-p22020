@@ -25,3 +25,5 @@ K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmClientes.reso
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmTablas.resources
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmNotas.resources
 K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmArrays.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmSwitch.resources
+K:\pro-visual-p22020\Apicacion1\Apicacion1\obj\Debug\Apicacion1.FrmFactura.resources

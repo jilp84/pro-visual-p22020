@@ -38,6 +38,8 @@
             this.tablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPromedio = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuArrays = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSwitch = new System.Windows.Forms.ToolStripMenuItem();
+            this.matrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +65,7 @@
             // mnuSalir
             // 
             this.mnuSalir.Name = "mnuSalir";
-            this.mnuSalir.Size = new System.Drawing.Size(96, 22);
+            this.mnuSalir.Size = new System.Drawing.Size(180, 22);
             this.mnuSalir.Text = "Salir";
             // 
             // mnuOpciones
@@ -74,7 +76,9 @@
             this.mnuClientes,
             this.tablasToolStripMenuItem,
             this.mnuPromedio,
-            this.mnuArrays});
+            this.mnuArrays,
+            this.mnuSwitch,
+            this.matrizToolStripMenuItem});
             this.mnuOpciones.Name = "mnuOpciones";
             this.mnuOpciones.Size = new System.Drawing.Size(69, 20);
             this.mnuOpciones.Text = "Opciones";
@@ -121,6 +125,20 @@
             this.mnuArrays.Text = "Arrays";
             this.mnuArrays.Click += new System.EventHandler(this.mnuArrays_Click);
             // 
+            // mnuSwitch
+            // 
+            this.mnuSwitch.Name = "mnuSwitch";
+            this.mnuSwitch.Size = new System.Drawing.Size(181, 22);
+            this.mnuSwitch.Text = "Switch";
+            this.mnuSwitch.Click += new System.EventHandler(this.mnuSwitch_Click);
+            // 
+            // matrizToolStripMenuItem
+            // 
+            this.matrizToolStripMenuItem.Name = "matrizToolStripMenuItem";
+            this.matrizToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.matrizToolStripMenuItem.Text = "Matriz";
+            this.matrizToolStripMenuItem.Click += new System.EventHandler(this.matrizToolStripMenuItem_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,5 +168,7 @@
         private System.Windows.Forms.ToolStripMenuItem tablasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuPromedio;
         private System.Windows.Forms.ToolStripMenuItem mnuArrays;
+        private System.Windows.Forms.ToolStripMenuItem mnuSwitch;
+        private System.Windows.Forms.ToolStripMenuItem matrizToolStripMenuItem;
     }
 }

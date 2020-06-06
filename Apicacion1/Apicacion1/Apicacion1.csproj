@@ -70,6 +70,12 @@
     <Compile Include="FrmColores.Designer.cs">
       <DependentUpon>FrmColores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura.Designer.cs">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNotas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSwitch.Designer.cs">
+      <DependentUpon>FrmSwitch.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTablas.cs">
       <SubType>Form</SubType>
@@ -108,6 +120,9 @@
     <EmbeddedResource Include="FrmColores.resx">
       <DependentUpon>FrmColores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura.resx">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmNotas.resx">
       <DependentUpon>FrmNotas.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSwitch.resx">
+      <DependentUpon>FrmSwitch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTablas.resx">
       <DependentUpon>FrmTablas.cs</DependentUpon>

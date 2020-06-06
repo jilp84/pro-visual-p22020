@@ -38,6 +38,7 @@
             this.btnMostrarArray = new System.Windows.Forms.Button();
             this.btnMostrarArrayWhile = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnForeach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTamanioArray
@@ -95,9 +96,9 @@
             // txtSalida
             // 
             this.txtSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalida.Location = new System.Drawing.Point(21, 72);
+            this.txtSalida.Location = new System.Drawing.Point(21, 75);
             this.txtSalida.Name = "txtSalida";
-            this.txtSalida.Size = new System.Drawing.Size(517, 366);
+            this.txtSalida.Size = new System.Drawing.Size(517, 363);
             this.txtSalida.TabIndex = 6;
             this.txtSalida.Text = "";
             // 
@@ -123,7 +124,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(176, 46);
+            this.btnLimpiar.Location = new System.Drawing.Point(43, 46);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(127, 23);
             this.btnLimpiar.TabIndex = 9;
@@ -131,11 +132,22 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // btnForeach
+            // 
+            this.btnForeach.Location = new System.Drawing.Point(176, 46);
+            this.btnForeach.Name = "btnForeach";
+            this.btnForeach.Size = new System.Drawing.Size(127, 23);
+            this.btnForeach.TabIndex = 10;
+            this.btnForeach.Text = "Foreach";
+            this.btnForeach.UseVisualStyleBackColor = true;
+            this.btnForeach.Click += new System.EventHandler(this.btnForeach_Click);
+            // 
             // FrmArrays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 450);
+            this.Controls.Add(this.btnForeach);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnMostrarArrayWhile);
             this.Controls.Add(this.btnMostrarArray);
@@ -166,5 +178,6 @@
         private System.Windows.Forms.Button btnMostrarArray;
         private System.Windows.Forms.Button btnMostrarArrayWhile;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnForeach;
     }
 }

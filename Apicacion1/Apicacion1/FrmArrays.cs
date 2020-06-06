@@ -85,5 +85,15 @@ namespace Apicacion1
         {
             Limpiar();
         }
+
+        private void btnForeach_Click(object sender, EventArgs e)
+        {
+            txtSalida.Text = "Foreach\n";
+
+            foreach (int item in array)
+            {
+                txtSalida.Text += "Array: " + item + "\n";
+            }
+        }
     }
 }

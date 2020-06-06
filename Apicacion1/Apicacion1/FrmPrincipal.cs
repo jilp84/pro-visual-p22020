@@ -67,5 +67,19 @@ namespace Apicacion1
             frmArrays.MdiParent = this;
             frmArrays.Visible = true;
         }
+
+        private void mnuSwitch_Click(object sender, EventArgs e)
+        {
+            FrmSwitch v = new FrmSwitch();
+            v.MdiParent = this;
+            v.Visible = true;
+        }
+
+        private void matrizToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFactura v = new FrmFactura();
+            v.MdiParent = this;
+            v.Visible = true;
+        }
     }
 }
