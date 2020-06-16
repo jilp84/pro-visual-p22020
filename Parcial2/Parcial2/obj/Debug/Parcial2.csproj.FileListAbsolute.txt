@@ -1,0 +1,10 @@
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Parcial2.exe.config
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Parcial2.exe
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Parcial2.pdb
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csprojAssemblyReference.cache
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.Form1.resources
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.Properties.Resources.resources
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csproj.GenerateResource.cache
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csproj.CoreCompileInputs.cache
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.exe
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.pdb
