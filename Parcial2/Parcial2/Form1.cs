@@ -12,9 +12,14 @@ namespace Parcial2
 {
     public partial class Form1 : Form
     {
+
+        List<Persona> personas = new List<Persona>();
+
         public Form1()
         {
             InitializeComponent();
+
+            dgDatos.DataSource = personas;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,6 +44,27 @@ namespace Parcial2
             MessageBox.Show("Nombre completo P2: " + persona2.NombreCompleto);
 
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            personas.Add(
+                new Persona {
+                    Nombres = txtNombres.Text,
+                    Apellidos = txtApellidos.Text,
+                    Id = txtId.Text
+                }
+            );
+            limpiar();
+
+            dgDatos.DataSource = personas;
+        }
+
+        void limpiar() {
+            txtId.Clear();
+            txtNombres.Clear();
+            txtApellidos.Clear();
         }
     }
 }
