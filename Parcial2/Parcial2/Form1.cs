@@ -53,12 +53,15 @@ namespace Parcial2
                 new Persona {
                     Nombres = txtNombres.Text,
                     Apellidos = txtApellidos.Text,
-                    Id = txtId.Text
+                    Id = txtId.Text,
+                    FechaNacimiento = cmbFechaNacimiento.Value.Date
                 }
             );
             limpiar();
 
-            dgDatos.DataSource = personas;
+            var fuente = new BindingSource();
+            fuente.DataSource = personas;
+            dgDatos.DataSource = fuente;
         }
 
         void limpiar() {

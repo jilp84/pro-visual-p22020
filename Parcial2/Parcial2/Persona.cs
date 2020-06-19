@@ -23,6 +23,14 @@ namespace Parcial2
             }
         }
 
+        public DateTime FechaNacimiento { get; set; }
+
+        public int Edad {
+            get {                
+                return DateTime.Now.Year - FechaNacimiento.Year;
+            }
+        }
+
         //Metodos
 
         public void test() {

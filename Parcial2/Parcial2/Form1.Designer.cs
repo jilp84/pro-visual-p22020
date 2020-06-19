@@ -30,14 +30,16 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblId = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtNombres = new System.Windows.Forms.TextBox();
-            this.lblNombres = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.lblApellidos = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.lblNombres = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.dgDatos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +56,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbFechaNacimiento);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtApellidos);
@@ -64,42 +68,20 @@
             this.groupBox1.Controls.Add(this.lblId);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(682, 71);
+            this.groupBox1.Size = new System.Drawing.Size(682, 98);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // lblId
+            // btnAdd
             // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(36, 33);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(19, 13);
-            this.lblId.TabIndex = 0;
-            this.lblId.Text = "Id:";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(78, 29);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 1;
-            // 
-            // txtNombres
-            // 
-            this.txtNombres.Location = new System.Drawing.Point(242, 29);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(100, 20);
-            this.txtNombres.TabIndex = 3;
-            // 
-            // lblNombres
-            // 
-            this.lblNombres.AutoSize = true;
-            this.lblNombres.Location = new System.Drawing.Point(192, 33);
-            this.lblNombres.Name = "lblNombres";
-            this.lblNombres.Size = new System.Drawing.Size(52, 13);
-            this.lblNombres.TabIndex = 2;
-            this.lblNombres.Text = "Nombres:";
+            this.btnAdd.Location = new System.Drawing.Point(510, 28);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Agregar";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtApellidos
             // 
@@ -117,23 +99,61 @@
             this.lblApellidos.TabIndex = 4;
             this.lblApellidos.Text = "Apellidos";
             // 
-            // btnAdd
+            // txtNombres
             // 
-            this.btnAdd.Location = new System.Drawing.Point(510, 28);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Agregar";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.txtNombres.Location = new System.Drawing.Point(242, 29);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(100, 20);
+            this.txtNombres.TabIndex = 3;
+            // 
+            // lblNombres
+            // 
+            this.lblNombres.AutoSize = true;
+            this.lblNombres.Location = new System.Drawing.Point(192, 33);
+            this.lblNombres.Name = "lblNombres";
+            this.lblNombres.Size = new System.Drawing.Size(52, 13);
+            this.lblNombres.TabIndex = 2;
+            this.lblNombres.Text = "Nombres:";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(78, 29);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 1;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(36, 33);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(19, 13);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "Id:";
             // 
             // dgDatos
             // 
             this.dgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDatos.Location = new System.Drawing.Point(12, 89);
+            this.dgDatos.Location = new System.Drawing.Point(12, 129);
             this.dgDatos.Name = "dgDatos";
-            this.dgDatos.Size = new System.Drawing.Size(682, 349);
+            this.dgDatos.Size = new System.Drawing.Size(682, 309);
             this.dgDatos.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Fecha de Nacimiento:";
+            // 
+            // cmbFechaNacimiento
+            // 
+            this.cmbFechaNacimiento.Location = new System.Drawing.Point(154, 69);
+            this.cmbFechaNacimiento.Name = "cmbFechaNacimiento";
+            this.cmbFechaNacimiento.Size = new System.Drawing.Size(200, 20);
+            this.cmbFechaNacimiento.TabIndex = 8;
             // 
             // Form1
             // 
@@ -163,6 +183,8 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.DataGridView dgDatos;
+        private System.Windows.Forms.DateTimePicker cmbFechaNacimiento;
+        private System.Windows.Forms.Label label1;
     }
 }
 
