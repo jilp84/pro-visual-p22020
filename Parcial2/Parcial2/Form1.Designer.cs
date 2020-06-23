@@ -30,6 +30,8 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -38,8 +40,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.dgDatos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +72,22 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // cmbFechaNacimiento
+            // 
+            this.cmbFechaNacimiento.Location = new System.Drawing.Point(154, 69);
+            this.cmbFechaNacimiento.Name = "cmbFechaNacimiento";
+            this.cmbFechaNacimiento.Size = new System.Drawing.Size(200, 20);
+            this.cmbFechaNacimiento.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Fecha de Nacimiento:";
             // 
             // btnAdd
             // 
@@ -133,27 +149,12 @@
             // 
             // dgDatos
             // 
+            this.dgDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgDatos.Location = new System.Drawing.Point(12, 129);
             this.dgDatos.Name = "dgDatos";
             this.dgDatos.Size = new System.Drawing.Size(682, 309);
             this.dgDatos.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Fecha de Nacimiento:";
-            // 
-            // cmbFechaNacimiento
-            // 
-            this.cmbFechaNacimiento.Location = new System.Drawing.Point(154, 69);
-            this.cmbFechaNacimiento.Name = "cmbFechaNacimiento";
-            this.cmbFechaNacimiento.Size = new System.Drawing.Size(200, 20);
-            this.cmbFechaNacimiento.TabIndex = 8;
             // 
             // Form1
             // 
