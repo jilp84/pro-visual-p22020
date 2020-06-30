@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Parcial2Data.Models;
+using Parcial2Data.Controllers;
 
 namespace Parcial2
 {
@@ -19,29 +21,42 @@ namespace Parcial2
         {
             InitializeComponent();
 
-            dgDatos.DataSource = personas;
+            CargarListaPersonas();
         }
+
+        private void CargarListaPersonas() {
+            personas = PersonasCrontroller.GetPersonas();
+
+            SetFuenteDatos();
+        }
+
+        private void SetFuenteDatos() {
+            var fuente = new BindingSource();
+            fuente.DataSource = personas;
+            dgDatos.DataSource = fuente;
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int promedio = 0;
-            Persona persona1 = new Persona();
-            Persona persona2 = new Persona();
+            //int promedio = 0;
+            //Persona persona1 = new Persona();
+            //Persona persona2 = new Persona();
 
-            persona1.Id = "0401-1998-00041";
+            //persona1.Id = "0401-1998-00041";
 
-            persona1.Nombres = "Juan";
-            persona1.Apellidos = "Perez";
+            //persona1.Nombres = "Juan";
+            //persona1.Apellidos = "Perez";
 
 
-            persona2.Id = "0415-2000-00158";
+            //persona2.Id = "0415-2000-00158";
 
             //MessageBox.Show(
             //    "P1 Id:" + persona1.Id + "\n" +
             //     "P2 Id:" + persona2.Id);
 
-            MessageBox.Show("Nombre completo P1: " + persona1.NombreCompleto);
-            MessageBox.Show("Nombre completo P2: " + persona2.NombreCompleto);
+            //MessageBox.Show("Nombre completo P1: " + persona1.NombreCompleto);
+            //MessageBox.Show("Nombre completo P2: " + persona2.NombreCompleto);
 
 
         }
@@ -53,7 +68,7 @@ namespace Parcial2
                 new Persona {
                     Nombres = txtNombres.Text,
                     Apellidos = txtApellidos.Text,
-                    Id = txtId.Text,
+                    Id = int.Parse(txtId.Text),
                     FechaNacimiento = cmbFechaNacimiento.Value.Date
                 }
             );

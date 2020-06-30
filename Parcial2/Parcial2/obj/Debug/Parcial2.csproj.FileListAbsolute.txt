@@ -8,3 +8,12 @@ K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csproj.GenerateResourc
 K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csproj.CoreCompileInputs.cache
 K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.exe
 K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.pdb
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\db\directorio.db
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Parcial2Data.dll
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\System.Data.SQLite.dll
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Parcial2Data.pdb
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\System.Data.SQLite.xml
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\System.Data.SQLite.dll.config
+K:\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csproj.CopyComplete
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Dapper.dll
+K:\pro-visual-p22020\Parcial2\Parcial2\bin\Debug\Dapper.xml

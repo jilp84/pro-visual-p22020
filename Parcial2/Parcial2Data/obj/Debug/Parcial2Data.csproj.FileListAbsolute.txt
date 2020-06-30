@@ -1,0 +1,12 @@
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Parcial2Data.dll
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Parcial2Data.pdb
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Dapper.dll
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\System.Data.SQLite.dll
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Dapper.xml
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\System.Data.SQLite.xml
+K:\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\System.Data.SQLite.dll.config
+K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csprojAssemblyReference.cache
+K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csproj.CoreCompileInputs.cache
+K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csproj.CopyComplete
+K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.dll
+K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.pdb
