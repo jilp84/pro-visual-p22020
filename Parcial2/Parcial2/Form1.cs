@@ -63,20 +63,26 @@ namespace Parcial2
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            Persona persona = new Persona {
+                Nombres = txtNombres.Text,
+                Apellidos = txtApellidos.Text,
+                FechaNacimiento = cmbFechaNacimiento.Value.Date
+            };
 
-            personas.Add(
-                new Persona {
-                    Nombres = txtNombres.Text,
-                    Apellidos = txtApellidos.Text,
-                    Id = int.Parse(txtId.Text),
-                    FechaNacimiento = cmbFechaNacimiento.Value.Date
-                }
-            );
+            //personas.Add(
+            //    new Persona {
+            //        Nombres = txtNombres.Text,
+            //        Apellidos = txtApellidos.Text,
+            //        Id = int.Parse(txtId.Text),
+            //        FechaNacimiento = cmbFechaNacimiento.Value.Date
+            //    }
+            //);
+
+            PersonasCrontroller.InsertarPersona(persona);
+
             limpiar();
+            CargarListaPersonas();
 
-            var fuente = new BindingSource();
-            fuente.DataSource = personas;
-            dgDatos.DataSource = fuente;
         }
 
         void limpiar() {

@@ -24,6 +24,26 @@ namespace Parcial2Data.Controllers
 
         }
 
+        public static void InsertarPersona(Persona persona) {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString())) {
+
+                string sql = "INSERT INTO Persona ( "
+                            + "    Nombres, "
+                            + "    Apellidos, "
+                            + "    FechaNacimiento "
+                            + ") "
+                            + "VALUES( "
+                            + "    @Nombres, "
+                            + "    @Apellidos, "
+                            + "    @FechaNacimiento "
+                            + ")";
+
+                cnn.Execute(sql, persona);
+            }
+        
+        }
+
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;
