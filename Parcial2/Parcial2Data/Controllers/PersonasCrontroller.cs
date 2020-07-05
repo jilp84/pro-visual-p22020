@@ -13,9 +13,11 @@ namespace Parcial2Data.Controllers
 {
     public class PersonasCrontroller
     {
-        public static List<Persona> GetPersonas() {
+        public static List<Persona> GetPersonas()
+        {
 
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString())) {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
                 var output = cnn.Query<Persona>("SELECT * FROM Persona", new DynamicParameters());
 
                 return output.ToList();
@@ -24,9 +26,26 @@ namespace Parcial2Data.Controllers
 
         }
 
-        public static void InsertarPersona(Persona persona) {
+        public static List<Persona> BuscarPersonas(string buscar)
+        {
 
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString())) {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<Persona>(
+                    "SELECT * FROM Persona WHERE (Nombres || ' ' || Apellidos) like '%' || @Buscar || '%'", 
+                    new {Buscar = buscar } );
+
+                return output.ToList();
+
+            }
+
+        }
+
+        public static void InsertarPersona(Persona persona)
+        {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
 
                 string sql = "INSERT INTO Persona ( "
                             + "    Nombres, "
@@ -41,7 +60,35 @@ namespace Parcial2Data.Controllers
 
                 cnn.Execute(sql, persona);
             }
-        
+
+        }
+
+        public static void EditarPersona(Persona persona)
+        {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                string sql = "UPDATE Persona "
+                            + " SET "
+                            + "  Nombres = @Nombres, "
+                            + "  Apellidos = @Apellidos, "
+                            + "  FechaNacimiento = @FechaNacimiento "
+                            + " WHERE Id = @Id ";
+                cnn.Execute(sql, persona);
+            }
+
+        }
+
+        public static void BorrarPersona(Persona persona)
+        {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                string sql = "DELETE FROM Persona WHERE Id = @Id";
+
+                cnn.Execute(sql, persona);
+            }
+
         }
 
         private static string LoadConnectionString(string id = "Default")

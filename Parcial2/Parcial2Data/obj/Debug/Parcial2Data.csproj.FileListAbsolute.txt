@@ -10,3 +10,15 @@ K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csproj.CoreCom
 K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csproj.CopyComplete
 K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.dll
 K:\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.pdb
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Parcial2Data.dll
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Parcial2Data.pdb
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Dapper.dll
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\System.Data.SQLite.dll
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\Dapper.xml
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\System.Data.SQLite.xml
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\bin\Debug\System.Data.SQLite.dll.config
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csprojAssemblyReference.cache
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csproj.CoreCompileInputs.cache
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.csproj.CopyComplete
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.dll
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2Data\obj\Debug\Parcial2Data.pdb

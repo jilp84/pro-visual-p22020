@@ -58,6 +58,17 @@ namespace Parcial2
             //MessageBox.Show("Nombre completo P1: " + persona1.NombreCompleto);
             //MessageBox.Show("Nombre completo P2: " + persona2.NombreCompleto);
 
+            Persona persona = new Persona {
+                Id = int.Parse(txtId.Text),
+                Nombres = txtNombres.Text,
+                Apellidos = txtApellidos.Text,
+                FechaNacimiento = cmbFechaNacimiento.Value
+            };
+
+            PersonasCrontroller.EditarPersona(persona);
+
+            limpiar();
+            CargarListaPersonas();
 
         }
 
@@ -89,6 +100,43 @@ namespace Parcial2
             txtId.Clear();
             txtNombres.Clear();
             txtApellidos.Clear();
+        }
+
+        private void dgDatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var persona = personas.Where(
+                p => p.Id == int.Parse(dgDatos.CurrentRow.Cells[0].Value.ToString())).FirstOrDefault();
+
+            txtId.Text = persona.Id.ToString();
+            txtNombres.Text = persona.Nombres;
+            txtApellidos.Text = persona.Apellidos;
+            cmbFechaNacimiento.Value = persona.FechaNacimiento;
+
+
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            Persona persona = new Persona { 
+                Id = int.Parse(dgDatos.CurrentRow.Cells[0].Value.ToString())
+            };
+
+            PersonasCrontroller.BorrarPersona(persona);
+            
+            CargarListaPersonas();
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BuscarPersonas();
+        }
+
+        private void BuscarPersonas()
+        {
+            personas = PersonasCrontroller.BuscarPersonas(txtBuscar.Text);
+
+            SetFuenteDatos();
         }
     }
 }
