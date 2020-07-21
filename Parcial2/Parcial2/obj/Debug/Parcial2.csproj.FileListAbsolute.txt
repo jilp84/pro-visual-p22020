@@ -36,3 +36,4 @@ C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csp
 C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.csproj.CopyComplete
 C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.exe
 C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.pdb
+C:\code\unicah\2020T2\pro-visual-p22020\Parcial2\Parcial2\obj\Debug\Parcial2.FrmContactos.resources

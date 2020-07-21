@@ -138,5 +138,16 @@ namespace Parcial2
 
             SetFuenteDatos();
         }
+
+        private void btnContactos_Click(object sender, EventArgs e)
+        {
+            Persona personaSeleccionada = personas.Where(
+                p => p.Id == int.Parse(dgDatos.CurrentRow.Cells[0].Value.ToString())).FirstOrDefault();
+
+            FrmContactos contactos = new FrmContactos(personaSeleccionada);
+            contactos.ShowDialog();
+            contactos.Dispose();
+
+        }
     }
 }

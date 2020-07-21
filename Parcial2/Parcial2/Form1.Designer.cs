@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.cmbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -40,10 +41,10 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.dgDatos = new System.Windows.Forms.DataGridView();
-            this.btnBorrar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnContactos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -78,6 +79,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(672, 28);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 9;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // cmbFechaNacimiento
             // 
@@ -163,18 +174,9 @@
             this.dgDatos.TabIndex = 2;
             this.dgDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDatos_CellClick);
             // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Location = new System.Drawing.Point(672, 28);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 9;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnContactos);
             this.groupBox2.Controls.Add(this.btnBuscar);
             this.groupBox2.Controls.Add(this.txtBuscar);
             this.groupBox2.Location = new System.Drawing.Point(12, 110);
@@ -182,13 +184,6 @@
             this.groupBox2.Size = new System.Drawing.Size(789, 50);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(16, 19);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(100, 20);
-            this.txtBuscar.TabIndex = 10;
             // 
             // btnBuscar
             // 
@@ -199,6 +194,23 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(16, 19);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscar.TabIndex = 10;
+            // 
+            // btnContactos
+            // 
+            this.btnContactos.Location = new System.Drawing.Point(203, 17);
+            this.btnContactos.Name = "btnContactos";
+            this.btnContactos.Size = new System.Drawing.Size(113, 23);
+            this.btnContactos.TabIndex = 11;
+            this.btnContactos.Text = "Datos de Contacto";
+            this.btnContactos.UseVisualStyleBackColor = true;
+            this.btnContactos.Click += new System.EventHandler(this.btnContactos_Click);
             // 
             // Form1
             // 
@@ -237,6 +249,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button btnContactos;
     }
 }
 
