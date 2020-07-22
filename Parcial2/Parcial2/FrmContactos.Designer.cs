@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbTipoContacto = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbTipoContacto = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgDatos = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -54,21 +54,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // btnAgregar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Registro: ";
+            this.btnAgregar.Location = new System.Drawing.Point(494, 21);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // txtDescripcion
+            // cmbTipoContacto
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(73, 22);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(200, 20);
-            this.txtDescripcion.TabIndex = 1;
+            this.cmbTipoContacto.FormattingEnabled = true;
+            this.cmbTipoContacto.Location = new System.Drawing.Point(366, 22);
+            this.cmbTipoContacto.Name = "cmbTipoContacto";
+            this.cmbTipoContacto.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoContacto.TabIndex = 3;
             // 
             // label2
             // 
@@ -79,40 +81,40 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipo de Contacto: ";
             // 
-            // cmbTipoContacto
+            // txtDescripcion
             // 
-            this.cmbTipoContacto.FormattingEnabled = true;
-            this.cmbTipoContacto.Location = new System.Drawing.Point(366, 22);
-            this.cmbTipoContacto.Name = "cmbTipoContacto";
-            this.cmbTipoContacto.Size = new System.Drawing.Size(121, 21);
-            this.cmbTipoContacto.TabIndex = 3;
+            this.txtDescripcion.Location = new System.Drawing.Point(73, 22);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(200, 20);
+            this.txtDescripcion.TabIndex = 1;
             // 
-            // btnAgregar
+            // label1
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(494, 21);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Registro: ";
             // 
-            // dataGridView1
+            // dgDatos
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(588, 305);
-            this.dataGridView1.TabIndex = 1;
+            this.dgDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgDatos.Location = new System.Drawing.Point(12, 73);
+            this.dgDatos.Name = "dgDatos";
+            this.dgDatos.Size = new System.Drawing.Size(588, 305);
+            this.dgDatos.TabIndex = 1;
             // 
             // FrmContactos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 389);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgDatos);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -121,7 +123,7 @@
             this.Text = "Datos de Contacto de: ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,6 +136,6 @@
         private System.Windows.Forms.ComboBox cmbTipoContacto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgDatos;
     }
 }

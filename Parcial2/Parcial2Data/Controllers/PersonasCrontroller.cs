@@ -41,6 +41,30 @@ namespace Parcial2Data.Controllers
 
         }
 
+        public static List<Contactos> GetContactos(int buscar)
+        {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<Contactos>(
+                    "SELECT " +
+                    "    C.Id, " +
+                    "    C.Descripcion, " +
+                    "    P.Id PersonaId, " + 
+                    "    P.Nombres || ' ' || P.Apellidos PersonaNombre, " +
+                    "    T.Id TipoContactoId, " +
+                    "    T.Descripcion TipoContactoNombre " +
+                    "FROM Persona P, PersonaContacto C, TipoContacto T " +
+                    "WHERE P.Id = C.PersonaId " +
+                    "    AND C.TipoContactoId = T.Id " +
+                    "    AND P.Id = @Buscar ", new { Buscar = buscar });
+
+                return output.ToList();
+
+            }
+
+        }
+
         public static void InsertarPersona(Persona persona)
         {
 
